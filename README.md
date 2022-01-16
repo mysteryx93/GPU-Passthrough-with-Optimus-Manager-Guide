@@ -96,6 +96,13 @@ Then, since the GPU would have a '0000' ID, I needed to add vendor-id and device
   <qemu:arg value="device.hostdev0.x-pci-sub-device-id=0x1442"/>
 </qemu:commandline>
 ```
+Get your VendorId and DeviceId by typing this. Look at Subsystem. 1025 is my vendor-id and 1442 is my device-id.
+
+    lspci -nnks 01:00.
+
+    01:00.0 VGA compatible controller [0300]: NVIDIA Corporation TU106M [GeForce RTX 2060 Mobile] [10de:1f15] (rev a1)
+    Subsystem: Acer Incorporated [ALI] Device [1025:1442]
+
 
 With QXL display, to unlock resolution above 800x600, go to Device Manager and update the driver for "Basic Display Adapter" with Virtio drivers. You should have already done similar steps to install your hard drive with Virtio drivers.
 
@@ -208,7 +215,7 @@ To test your scripts, run `bind_vfio.sh` and the display should switch to your i
 
 Run this command to confirm that all devices are now bound to vfio-pci drivers
 
-    lspci -kn | grep -A 2 01:00.
+    lspci -nnks 01:00.
 
 Undo.
 
