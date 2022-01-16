@@ -5,7 +5,8 @@ After spending a full week trying to get GPU passthrough to work on my laptop, I
 This guide applies if you're running Linux and use Optimus Manager to manage your dual-graphics.
 
 My laptop: `Acer Helios 300, Intel Core i7-10750H, NVidia RTX 2060`    
-OS: `Garuda Linux` (which comes with Optimus Manager by default)
+OS: `Garuda Linux` (which comes with Optimus Manager by default)    
+VM: `Virtual Machine Manager, QEMU, KVM`
 
 ## Why VM? Setup Objectives
 
