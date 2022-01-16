@@ -230,7 +230,7 @@ It will now automatically switch the GPU when starting your `win10-gpu` VM! Grea
 
 One last problem. If you don't log back into Linux before Windows 10 boots up, you will have no internet connection. The WiFi connection is tied to the Linux user session. Logging in after won't restore the Windows connection.
 
-[TODO: FIX]
+To fix this, configure your Network connection. Under "General Configuration", there should be an option "All users may connect to this network". Check that.
 
 
 ## Performance Tuning
