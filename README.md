@@ -1,6 +1,6 @@
 # Guide for GPU Passthrough on laptop with Optimus Manager
 
-After spending 5 full days trying to get GPU passthrough to work on my laptop, I wanted to share the solution. There are plenty of guides out there, and I'll focus mainly on the information that is missing from those guides.
+After spending a full week trying to get GPU passthrough to work on my laptop, I wanted to share the solution. There are plenty of guides out there, and I'll focus mainly on the information that is missing from those guides.
 
 This guide applies if you're running Linux and use Optimus Manager to manage your dual-graphics.
 
