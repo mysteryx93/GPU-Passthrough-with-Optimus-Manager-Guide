@@ -225,6 +225,11 @@ Try switching back and forth a few times.
 
 It will now automatically switch the GPU when starting your `win10-gpu` VM! Great work.
 
+One last problem. If you don't log back into Linux before Windows 10 boots up, you will have no internet connection. The WiFi connection is tied to the Linux user session. Logging in after won't restore the Windows connection.
+
+[TODO: FIX]
+
+
 ## Performance Tuning
 
 Hugepages: Transparent hugepages work by default. The experts who helped me said that there's no benefit in setting up static hugepages. Even though most guides tell you to do so.
