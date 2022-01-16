@@ -4,6 +4,8 @@ After spending a full week trying to get GPU passthrough to work on my laptop, I
 
 This guide applies if you're running Linux and use Optimus Manager to manage your dual-graphics.
 
+If you get a freeze issue on `virsh nodedev-detach` with a different setup, you can probably easily adapt the solution to your needs.
+
 My laptop: `Acer Helios 300, Intel Core i7-10750H, NVidia RTX 2060`    
 OS: `Garuda Linux` (which comes with Optimus Manager by default)    
 VM: `Virtual Machine Manager, QEMU, KVM`
