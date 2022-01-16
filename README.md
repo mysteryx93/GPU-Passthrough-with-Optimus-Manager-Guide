@@ -29,7 +29,7 @@ Achieving GPU passthrough on a VM however has some advantages over dual-booting:
 
 My VM setup works like this. I have my Linux displaying on the HDMI output (only the NVidia GPU can display over HDMI). When I start the VM, it transfers Linux to my laptop internal display, logs me out, and boots Windows on the TV. I can press both CTRL to switch keyboard and mouse between Linux on the laptop and Windows on the TV. When I shut down Windows, it logs me out of Linux again, and transfers Linux back to the TV.
 
-I actually have 2 VM configurations setup: win10 and win10-gpu. If I don't want to play games, then I don't need the GPU and don't need to kill my session. I just start the non-GPU session.
+I actually have 2 VM configurations setup: `win10` and `win10-gpu. If I don't want to play games, then I don't need the GPU and don't need to kill my session. I just start the non-GPU session.
 
 ## Optimus Guides?
 
