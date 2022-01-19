@@ -244,6 +244,22 @@ CPU pinning: the pinning strategy depends on your CPU. I made some tests and was
 
 I decided to pin 5 of 6 cores in `win10-gpu`, and to pin all 12 threads in the `win10` non-GPU VM. It's really a choice between max performance and max responsiveness. You can optimize both VMs differently.
 
+## Performance benchmark
+
+#### Geekbench
+
+With all CPU pinned, Windows VM gets about 12% lower than barebone. Lower with only 5 CPU pinned (but slight game stuttering). Note that using 5 of 6 cores will generate less heat, which will somewhat compensate under heavy load.
+
+#### Unreal Heaven
+
+Max settings 1080p
+
+Linux (Open GL): 1367 (fps min 33.7, avg 54.3, max 104.0)
+
+Windows VM (DX11): 1621 (fps min 8.7, avg 64.3, max 141.6)
+
 ## Final Configuration
 
 Here's my final QEMU configuration for [win10-gpu](https://pastebin.com/n1eRP51b) and for [win10](https://pastebin.com/JFjjPH3F).
+
+Note: audio and looking glass isn't yet configured (it's doing audio on the TV)
