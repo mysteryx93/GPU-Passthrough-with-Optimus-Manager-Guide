@@ -160,7 +160,7 @@ Look for your NVidia GPU and note the device id
 set -x
 
 # Shut down display to release GPU
-optimus-manager --switch --no-confirm integrated
+optimus-manager --no-confirm --switch integrated
 systemctl stop display-manager.service
 
 # Unload NVidia
@@ -208,7 +208,7 @@ modprobe nvidia_modeset
 modprobe nvidia
 
 # Restart session with GPU set to Hybrid
-optimus-manager --switch --no-confirm hybrid
+optimus-manager --no-confirm --switch hybrid
 systemctl restart display-manager.service
 ```
 
