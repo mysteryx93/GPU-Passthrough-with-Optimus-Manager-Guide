@@ -209,7 +209,8 @@ modprobe nvidia_modeset
 modprobe nvidia
 
 # Restart session with GPU set to Hybrid
-optimus-manager --no-confirm --switch hybrid
+# Put Y in the stdin to avoid prompting for confirmation if using wayland
+optimus-manager --no-confirm --switch hybrid <<< "Y"
 systemctl restart display-manager.service
 ```
 
