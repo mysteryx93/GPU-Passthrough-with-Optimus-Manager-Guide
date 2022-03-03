@@ -160,7 +160,8 @@ Look for your NVidia GPU and note the device id
 set -x
 
 # Shut down display to release GPU
-optimus-manager --no-confirm --switch integrated
+# Put Y in the stdin to avoid prompting for confirmation if using wayland
+optimus-manager --no-confirm --switch integrated <<< "Y"
 systemctl stop display-manager.service
 
 # Unload NVidia
