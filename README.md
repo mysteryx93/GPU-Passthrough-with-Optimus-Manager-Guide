@@ -160,7 +160,8 @@ Look for your NVidia GPU and note the device id
 set -x
 
 # Shut down display to release GPU
-optimus-manager --no-confirm --switch integrated
+# Put Y in the stdin to avoid prompting for confirmation if using wayland
+optimus-manager --no-confirm --switch integrated <<< "Y"
 systemctl stop display-manager.service
 
 # Unload NVidia
@@ -208,7 +209,8 @@ modprobe nvidia_modeset
 modprobe nvidia
 
 # Restart session with GPU set to Hybrid
-optimus-manager --no-confirm --switch hybrid
+# Put Y in the stdin to avoid prompting for confirmation if using wayland
+optimus-manager --no-confirm --switch hybrid <<< "Y"
 systemctl restart display-manager.service
 ```
 
