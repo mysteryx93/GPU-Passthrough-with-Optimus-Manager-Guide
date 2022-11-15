@@ -246,6 +246,10 @@ CPU pinning: the pinning strategy depends on your CPU. I made some tests and was
 
 I decided to pin 5 of 6 cores in `win10-gpu`, and to pin all 12 threads in the `win10` non-GPU VM. It's really a choice between max performance and max responsiveness. You can optimize both VMs differently.
 
+## Troubleshooting
+
+Update November 2022: Over the past months, there has been various issues reported with new Linux kernels and NVidia drivers, and some of these problems affect the VM. I would get a system freeze when I try to start a VM after the bios. Someone else got Error 43. Zen kernel was problematic. If you get similar problems, you can try different kernels. `linux-xanmod-edge` solved all the problems for me (and boots much faster).
+
 ## Performance benchmark
 
 #### Geekbench
